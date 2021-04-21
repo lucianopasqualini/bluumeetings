@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/** Variables **/
+.blanco {
+  color: #FFFFFF;
+}
+
+.azul-1 {
+  color: #131c46;
+}
+
+.azul-2 {
+  color: #3c4c8f;
+}
+
+.azul-3 {
+  color: #3591d8;
+}
+
+.azul-4 {
+  color: #80c4f9;
+}
+
+.azul-5 {
+  color: #078aef;
+}
+
+.bg-azul-1 {
+  background-color: #153f59;
+}
+
+.bg-azul-2 {
+  background-color: #365b77;
+}
+
+.bg-azul-3 {
+  background-color: #557996;
+}
+
+.bg-azul-4 {
+  background-color: #7498b6;
+}
+
+.bg-azul-5 {
+  background-color: #94b8d7;
+}
+
+/** SCSS para Bootstrap **/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body img {
+  width: 100%;
+}
+
+body video {
+  width: 100%;
+}
+
+.titulos {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subtitulos {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.arrowFixed {
+  position: fixed;
+  margin-top: 80vh;
+  margin-left: 87%;
+  z-index: 100;
+  width: 2rem;
+}
+
+.boton {
+  background: radial-gradient(circle, #1166b8 0%, #043563 100%);
+  border-radius: 2rem;
+}
+
+.boton a {
+  font-size: 1rem;
+}
+
+.boton:hover {
+  background: radial-gradient(circle, #1166b8 0%, #043563 100%);
+  border-radius: 2rem;
+  transform: scale(1.1);
+}
+
+.clear {
+  background-color: #FFFFFF;
+  border: 0.125rem solid #131c46;
+}
+
+.clear:hover {
+  background: radial-gradient(ellipse at center, white 0%, #f6f6f6 47%, #ededed 100%);
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  text-align: right;
+}
+
+.nav-link {
+  padding: 0.25rem 0.5rem;
+}
+
+.header__botonera {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.header__linkActivo {
+  color: #078aef;
+}
+
+.whyLuna__emoji {
+  height: 20vh;
+  width: auto;
+}
+
+.form__seccion {
+  border-top: 0.5rem solid #131c46;
+  border-bottom: 0.5rem solid #131c46;
+}
+
+.form__formulario {
+  width: 100%;
+  border: 0.125rem solid #131c46;
+  border-radius: 2rem;
+}
+
+.carousel__botonIzq {
+  padding: 0.5rem;
+  border: 0.5rem solid #131c46;
+  border-radius: 2rem;
+  background-color: #131c46;
+  transform: translate(-3rem);
+}
+
+.carousel__botonDer {
+  padding: 0.5rem;
+  border: 0.5rem solid #131c46;
+  border-radius: 2rem;
+  background-color: #131c46;
+  transform: translate(3rem);
+}
+
+.footer__redSocial {
+  width: 40px;
+  height: auto;
+  padding: 0 1%;
+}
+
+.pricing__plan {
+  margin: 5% 5%;
+  padding: 0 0.5rem;
+  width: 40%;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 6rem 6rem auto;
+  align-items: center;
+}
+
+.pricing__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pricing__discount {
+  text-decoration: line-through;
+}
+
+.templates__template {
+  border-radius: 2rem;
+}
+
+.templates__templateDuration {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.templates__templateContent {
+  background: radial-gradient(circle, #e3f1ff 0%, #baddff 100%);
+  font-size: 0.75rem;
+  font-style: italic;
+  border-radius: 2rem;
+}
+
+.templates__moreToCome {
+  font-size: 1.75rem;
+}
+
+.faq__question {
+  font-size: 1rem;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+  .titulos {
+    font-size: 2.2rem;
+  }
+  .subtitulos {
+    font-size: 1.6rem;
+  }
+  .arrowFixed {
+    margin-left: 90%;
+    width: 2.5rem;
+  }
+  .boton a {
+    font-size: 1.25rem;
+  }
+  .header__menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+  }
+  .header__botonera {
+    font-size: 1.25rem;
+  }
+  .carousel__botonIzq {
+    padding: 0.75rem;
+    border: 0.66667rem solid #131c46;
+    transform: translate(-4rem);
+  }
+  .carousel__botonDer {
+    padding: 0.75rem;
+    border: 0.66667rem solid #131c46;
+    transform: translate(4rem);
+  }
+  .pricing__plan {
+    margin: 2% 2%;
+    width: 46%;
+  }
+  .pricing__price {
+    font-size: 1.75rem;
+  }
+  .templates__templateDuration {
+    font-size: 1rem;
+  }
+  .templates__templateContent {
+    font-size: 0.75rem;
+  }
+  .templates__moreToCome {
+    font-size: 2rem;
+  }
+  .faq__question {
+    font-size: 1.25rem;
+  }
+  .footer__redSocial {
+    width: 50px;
+    height: auto;
+    padding: 0 1%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .titulos {
+    font-size: 2.5rem;
+  }
+  .subtitulos {
+    font-size: 1.8rem;
+  }
+  .arrowFixed {
+    width: 3rem;
+  }
+  .carousel__botonIzq {
+    padding: 1rem;
+    border: 0.66667rem solid #131c46;
+    transform: translate(-5rem);
+  }
+  .carousel__botonDer {
+    padding: 1rem;
+    border: 0.66667rem solid #131c46;
+    transform: translate(5rem);
+  }
+  .pricing__plan {
+    margin: 2% 1%;
+    width: 23%;
+    grid-template-rows: 6rem 7rem auto;
+  }
+  .pricing__price {
+    font-size: 2rem;
+  }
+  .templates__templateDuration {
+    font-size: 1rem;
+  }
+  .templates__templateContent {
+    font-size: 0.75rem;
+  }
+  .templates__moreToCome {
+    font-size: 2rem;
+  }
+}
