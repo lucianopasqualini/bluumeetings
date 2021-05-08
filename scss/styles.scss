@@ -27,6 +27,7 @@ $colores: (
 	azul-5: #078aef,
 );
 $fondos: (
+	bg-azul-0: #078aef;
 	bg-azul-1: #153f59,
 	bg-azul-2: #365b77,
 	bg-azul-3: #557996,
@@ -80,7 +81,7 @@ body {
 	a {
 		font-size: $font-size-1rem;
 	}
-	:hover {
+	&:hover {
 		background: radial-gradient(circle, rgba(17,102,184,1) 0%, rgba(4,53,99,1) 100%);
 		border-radius: $radios;
 		transform: scale(1.1);
@@ -89,7 +90,7 @@ body {
 .clear {
 	background-color: $blanco;
 	border: $bordes/16 solid $azul-oscuro;
-	:hover {
+	&:hover {
 		background: radial-gradient(ellipse at center, rgb(255,255,255) 0%,rgb(246,246,246) 47%,rgb(237,237,237) 100%);
 		transform: scale(1.1);
 		transition-duration: 200ms;
