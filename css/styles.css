@@ -88,7 +88,7 @@ body video {
 }
 
 .boton {
-  background: radial-gradient(circle, #1166b8 0%, #043563 100%);
+  background: #FFB81C;
   border-radius: 2rem;
 }
 
@@ -97,7 +97,7 @@ body video {
 }
 
 .boton:hover {
-  background: radial-gradient(circle, #1166b8 0%, #043563 100%);
+  background: #FFB81C;
   border-radius: 2rem;
   transform: scale(1.1);
 }

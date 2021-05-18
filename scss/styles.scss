@@ -76,13 +76,13 @@ body {
 	width: $font-size-2rem;
 }
 .boton {
-	background: radial-gradient(circle, rgba(17,102,184,1) 0%, rgba(4,53,99,1) 100%);
+	background: #FFB81C;
 	border-radius: $radios;
 	a {
 		font-size: $font-size-1rem;
 	}
 	&:hover {
-		background: radial-gradient(circle, rgba(17,102,184,1) 0%, rgba(4,53,99,1) 100%);
+		background: #FFB81C;
 		border-radius: $radios;
 		transform: scale(1.1);
 	}
